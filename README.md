@@ -1,6 +1,6 @@
 # AI Weather Assistant
 
-A Flask web app that gets current conditions from OpenWeather and answers weather questions with Groq.
+A Flask web app for viewing temperatures and current conditions in different locations, then asking weather questions with Groq.
 
 ## Setup
 
