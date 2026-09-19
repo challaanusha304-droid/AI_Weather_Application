@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Weather Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header><p class="eyebrow">LIVE WEATHER + AI</p><h1>Weather, explained.</h1><p>Search a city, then ask your personal weather assistant.</p></header>
+      <form id="weather-form" class="search"><input id="city" value="New Delhi" aria-label="City" placeholder="Search a city" required><button>Search</button></form>
+      <p id="status" role="status"></p>
+      <section id="weather-card" class="weather-card hidden" aria-live="polite"></section>
+      <section id="assistant" class="assistant hidden">
+        <h2>Ask about this weather</h2>
+        <form id="question-form"><input id="question" placeholder="Should I carry an umbrella?" required><button>Ask AI</button></form>
+        <p id="answer"></p>
+      </section>
+    </main>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>

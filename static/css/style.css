@@ -1,0 +1,12 @@
+:root { font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #f8fbff; background: #081326; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: radial-gradient(circle at 20% 5%, #2659a8, transparent 42%), #081326; }
+.app-shell { width: min(680px, calc(100% - 32px)); padding: 48px 0; }
+h1 { font-size: clamp(2.5rem, 7vw, 4.5rem); line-height: 1; margin: 8px 0 14px; }
+h2 { margin-top: 0; }.eyebrow { color: #8bc4ff; font-weight: 700; font-size: .8rem; letter-spacing: .13em; }
+header > p:last-child { color: #b9c7dd; font-size: 1.1rem; }.search, #question-form { display: flex; gap: 10px; margin: 30px 0 12px; }
+input { min-width: 0; flex: 1; border: 1px solid #526885; border-radius: 10px; padding: 14px; font: inherit; color: inherit; background: #10213b; }
+button { border: 0; border-radius: 10px; padding: 14px 20px; font: inherit; font-weight: 700; cursor: pointer; color: #061321; background: #86d1ff; }
+.weather-card, .assistant { margin-top: 22px; padding: 25px; border: 1px solid #34516f; border-radius: 18px; background: rgb(15 32 57 / .85); }
+.weather-card h2 { margin: 0; }.temp { margin: 14px 0 5px; font-size: 4rem; font-weight: 800; }.metrics { display: flex; gap: 20px; color: #b9c7dd; }.assistant p, #status { color: #d5e1f1; line-height: 1.55; }.hidden { display: none; }
+@media (max-width: 420px) { .search, #question-form { flex-direction: column; } }
